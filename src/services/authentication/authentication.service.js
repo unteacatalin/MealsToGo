@@ -1,17 +1,25 @@
 import { initializeApp } from "firebase/app";
 import {
+  API_KEY,
+  AUTH_DOMAIN,
+  PROJECT_ID,
+  STORAGE_BUCKET,
+  MESSAGING_SENDER_ID,
+  APP_ID,
+} from "@env";
+import {
   createUserWithEmailAndPassword,
   getAuth,
   signInWithEmailAndPassword,
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCwnDmVjxb4hIMnehu23QwjpdGxax6ryJU",
-  authDomain: "boardtopgames-db.firebaseapp.com",
-  projectId: "boardtopgames-db",
-  storageBucket: "boardtopgames-db.appspot.com",
-  messagingSenderId: "433148399428",
-  appId: "1:433148399428:web:80d976e46e463cc0425111",
+  apiKey: API_KEY,
+  authDomain: AUTH_DOMAIN,
+  projectId: PROJECT_ID,
+  storageBucket: STORAGE_BUCKET,
+  messagingSenderId: MESSAGING_SENDER_ID,
+  appId: APP_ID,
 };
 
 let app;
